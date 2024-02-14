@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="title">
+      <span class="Todo">TODO</span>
+      <span><img src="./images/icon-sun.svg" alt="" /></span>
+    </div>
+
+    <div class="caixa-inpu">
+      <button class="clique-cima" onclick="newTask()"></button>
+      <input id="input-tex" type="text" placeholder="Creat a new todo.." />
+    </div>
+
+    <div class="container">
+      <div class="content-list">
+        <ul class="to-do-list"></ul>
+      </div>
+
+      <div class="baixo">
+        <span>All</span>
+        <span>Active</span>
+        <span onclick="mudarStyl()">Completed</span>
+        <span class="limpa" onclick="removeAll()">Clear Completed</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
